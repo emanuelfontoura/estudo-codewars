@@ -24,3 +24,13 @@ function wordsReverse(string){
 }
 
 console.log(wordsReverse("Welcome to my first code in Visual Studio"))
+
+// FORMA MAIS SIMPLEFICADA
+
+function spinWords(string){
+    return string.split(' ').map(str => {
+        return str.length >= 5 ? str.split('').reverse().join('') : str
+    }).join(' ')
+}
+
+console.log(spinWords("OLANS OLANS OI OLA"))
