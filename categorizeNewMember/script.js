@@ -9,3 +9,11 @@ function categorizer(array){
 }
 
 console.log(categorizer([[41, 2], [53, -7], [56, 8]]))
+
+// FORMA MAIS SIMPLIFICADA
+
+// USANDO OS CONCEITOS DE: ARROW FUNCTION, DESTRUCTURING E MAP
+
+function categorizer2(array){
+    return array.map(([age, handicap]) => age > 54 && handicap > 7 ? 'Senior' : 'Open')
+}
